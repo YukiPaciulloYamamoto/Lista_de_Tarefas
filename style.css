@@ -1,0 +1,84 @@
+* {
+  /* Formatação básica CSS */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  /* Colocando cor na página toda */
+  background-color: rgb(236, 236, 236);
+  place-items: center; /* Centraliza o conteúdo horizontal e vertical */
+  height: 100vh; /* Garante que a página ocupe toda a altura da janela */
+}
+
+h1 {
+  /* Estilizando o título */
+  margin-top: 100px; /* Margin top para deixar "centralizado" (nao consegui fazer de outra forma)*/
+  text-align: center; /* Alinhando o título */
+  font-size: 40px; /* Tamanho da fonte */
+  padding: 20px 0; /* Espaçamento do título */
+}
+
+form {
+  /* Estilizando o formulário */
+  display: flex; /* Usando flexbox para os itens do formulário */
+  align-items: center; /* Alinhando os itens (input e botão) ao centro verticalmente */
+  width: 50%; /* Utilizando 50% do tamanho da tela */
+  justify-content: space-between; /* Espaça os itens (input e botão) */
+}
+
+input {
+  /* Estilizando o input */
+  height: 40px; /* Tamanho do input no eixo Y */
+  font-size: 20px; /* Tamanho da fonte dentro do input */
+  padding-left: 20px; /* Deslocando o texto dentro do input da borda esquerda */
+  width: 70%; /* Tamanho do input no eixo X */
+  border-radius: 18px; /* Bordas arredondadas */
+  border: 1px solid black; /* Bordas pretas */
+}
+
+button.add {
+  /* Estilizando o botão */
+  width: 30%; /* Tamanho do botão */
+  cursor: pointer; /* Cursor de mãozinha */
+  border-radius: 18px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  background-color: green; /* Cor de fundo do botão */
+  color: white; /* Cor do texto no botão */
+  height: 40px; /* Altura do botão */
+  text-transform: uppercase; /* Transformando o texto para maiúsculas */
+  margin-left: 10px; /* Separando o botão do input */
+}
+
+.lista {
+  /* Estilizando o container da lista */
+  width: 50%; /* Fazendo com que ocupe 50% da tela */
+  margin-top: 20px; /* Margem para separação de itens */
+  margin-bottom: 10px; /* Margem para separação de itens */
+  background-color: white; /* Cor de fundo */
+  border-radius: 14px; /* Bordas do fundo arredondads */
+}
+
+ul {
+  /* Estilizando a lista */
+  list-style: none; /* Removendo o . preto */
+  border-radius: 14px; /* Bordas arredondas || Sem elas os cantos ficam quadrados (Ela é a principal) */
+}
+
+ul li {
+  /* Estilizando os itens da lista */
+  cursor: pointer; /* Cursor de mãozinha */
+  width: 100%; /* Garantindo que o item ocupe toda a largura da caixa */
+  text-align: center; /* Alinhando o texto ao centro */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: bold; /* Deixando o texto em negrito */
+  text-transform: uppercase; /* Transformando o texto em letras maiúsculas */
+}
+
+.tarefa-finalizada {
+  border-radius: 14px; /* Borda redonda para dar um charme */
+  text-decoration: line-through; /* Adicionando a linha que passa atravez da palavra*/
+  background-color: gray; /* Opcional: muda a cor para cinza */
+}
